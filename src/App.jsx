@@ -70,7 +70,9 @@ const [cartCount, setCartCount] = useState(0);
 
               <p>{product.price}</p>
 
-              <button>Add to Cart</button>
+              <button onClick={() => setCartCount(cartCount + 1)}>
+  Add to Cart
+</button>
             </div>
           ))}
         </div>
