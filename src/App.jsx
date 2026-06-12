@@ -16,6 +16,13 @@ function App() {
       <main className="home">
         <h2>Welcome to NexCart</h2>
         <p>India's Next Shopping Destination 🚀</p>
+<div className="categories">
+  <div className="category">📱 Mobiles</div>
+  <div className="category">👕 Fashion</div>
+  <div className="category">💻 Electronics</div>
+  <div className="category">📚 Books</div>
+  <div className="category">🎮 Gaming</div>
+</div>
       </main>
     </>
   );
