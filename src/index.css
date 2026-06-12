@@ -41,3 +41,18 @@ body {
 .home h2 {
   margin-bottom: 10px;
 }
+.categories {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 20px 10px;
+}
+
+.category {
+  min-width: 110px;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
