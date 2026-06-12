@@ -1,3 +1,4 @@
+import { useState } from "react";
 const products = [
   {
     id: 1,
@@ -26,6 +27,7 @@ const products = [
 ];
 
 function App() {
+const [cartCount, setCartCount] = useState(0);
   return (
     <>
       <header className="header">
@@ -37,7 +39,9 @@ function App() {
           className="search"
         />
 
-        <button className="cart-btn">🛒</button>
+        <button className="cart-btn">
+  🛒 {cartCount}
+</button>
       </header>
 
       <main className="home">
