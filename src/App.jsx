@@ -24,6 +24,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
   }
 ];
+
 function App() {
   return (
     <>
@@ -42,28 +43,33 @@ function App() {
       <main className="home">
         <h2>Welcome to NexCart</h2>
         <p>India's Next Shopping Destination 🚀</p>
-<div className="banner">
-  <h2>Big Sale is Live 🎉</h2>
-  <p>Up to 70% OFF on Mobiles, Fashion & Electronics</p>
-</div>
-<div className="categories">
-  <div className="category">📱 Mobiles</div>
-  <div className="category">👕 Fashion</div>
-  <div className="category">💻 Electronics</div>
-  <div className="category">📚 Books</div>
-  <div className="category">🎮 Gaming</div>
-</div>
-<div className="products">
-  {products.map((product) => (
-    <div className="product-card" key={product.id}>
-  <img src={product.image} alt={product.name} />
 
-  <h3>{product.name}</h3>
+        <div className="banner">
+          <h2>Big Sale is Live 🎉</h2>
+          <p>Up to 70% OFF on Mobiles, Fashion & Electronics</p>
+        </div>
 
-  <p>{product.price}</p>
+        <div className="categories">
+          <div className="category">📱 Mobiles</div>
+          <div className="category">👕 Fashion</div>
+          <div className="category">💻 Electronics</div>
+          <div className="category">📚 Books</div>
+          <div className="category">🎮 Gaming</div>
+        </div>
 
-  <button>Add to Cart</button>
-</div>
+        <div className="products">
+          {products.map((product) => (
+            <div className="product-card" key={product.id}>
+              <img src={product.image} alt={product.name} />
+
+              <h3>{product.name}</h3>
+
+              <p>{product.price}</p>
+
+              <button>Add to Cart</button>
+            </div>
+          ))}
+        </div>
       </main>
     </>
   );
