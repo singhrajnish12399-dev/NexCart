@@ -188,10 +188,13 @@ const [cartItems, setCartItems] = useState([]);
               <p>{selectedProduct.price}</p>
 
               <button
-                onClick={() => setCartCount(cartCount + 1)}
-              >
-                Add to Cart
-              </button>
+  onClick={() => {
+    setCartCount(cartCount + 1);
+    setCartItems([...cartItems, product]);
+  }}
+>
+  Add to Cart
+</button>
 
               <br />
               <br />
