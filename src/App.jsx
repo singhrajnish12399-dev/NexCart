@@ -72,7 +72,12 @@ const [showCart, setShowCart] = useState(false);
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <button className="cart-btn">🛒 {cartCount}</button>
+        <button
+  className="cart-btn"
+  onClick={() => setShowCart(true)}
+>
+  🛒 {cartCount}
+</button>
       </header>
 
       <main className="home">
