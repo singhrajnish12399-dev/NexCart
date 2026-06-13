@@ -35,6 +35,7 @@ const [cartCount, setCartCount] = useState(0);
 const [liked, setLiked] = useState(false);
 const [selectedProduct, setSelectedProduct] = useState(null);
 const [search, setSearch] = useState("");
+const [selectedCategory, setSelectedCategory] = useState("All");
   return (
     <>
       <header className="header">
