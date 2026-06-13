@@ -33,6 +33,21 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
   },
+,
+{
+  id: 5,
+  name: "Men T-Shirt",
+  price: "₹799",
+  category: "Fashion",
+  image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+},
+{
+  id: 6,
+  name: "Programming Book",
+  price: "₹499",
+  category: "Books",
+  image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
+}
 ];
 
 function App() {
