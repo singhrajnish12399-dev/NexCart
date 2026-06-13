@@ -155,4 +155,38 @@ body {
   width: 100%;
   font-weight: bold;
   margin-top: 8px;
+}.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  width: 90%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.popup-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  border: none;
+  background: #ffcc00;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
 }
