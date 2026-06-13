@@ -81,10 +81,15 @@ body {
 
 .product-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
 }
 
 .product-card h3 {
@@ -141,4 +146,13 @@ body {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 8px;
+}
+.product-card button {
+  border: none;
+  background: #ffcc00;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 8px;
 }
