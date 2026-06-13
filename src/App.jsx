@@ -65,6 +65,7 @@ const [liked, setLiked] = useState(false);
         <div className="products">
           {products.map((product) => (
             <div className="product-card" key={product.id}>
+<div className="sale-badge">SALE</div>
               <img src={product.image} alt={product.name} />
 
               <h3>{product.name}</h3>
