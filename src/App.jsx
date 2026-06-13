@@ -91,6 +91,24 @@ const [selectedProduct, setSelectedProduct] = useState(null);
             </div>
           ))}
         </div>
+{selectedProduct && (
+  <div className="popup">
+    <div className="popup-content">
+      <img
+        src={selectedProduct.image}
+        alt={selectedProduct.name}
+      />
+
+      <h2>{selectedProduct.name}</h2>
+
+      <p>{selectedProduct.price}</p>
+
+      <button onClick={() => setSelectedProduct(null)}>
+        Close
+      </button>
+    </div>
+  </div>
+)}
       </main>
 <nav className="bottom-nav">
   <button>🏠 Home</button>
