@@ -84,58 +84,47 @@ function App() {
 
         <div className="categories">
   <div
-    className={`category ${
-      selectedCategory === "All" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "All" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("All")}
   >
     🏪 All
   </div>
 
   <div
-    className={`category ${
-      selectedCategory === "Mobiles" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "Mobiles" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("Mobiles")}
   >
     📱 Mobiles
   </div>
 
   <div
-    className={`category ${
-      selectedCategory === "Electronics" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "Electronics" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("Electronics")}
   >
     💻 Electronics
   </div>
 
   <div
-    className={`category ${
-      selectedCategory === "Gaming" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "Gaming" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("Gaming")}
   >
     🎮 Gaming
   </div>
 
   <div
-    className={`category ${
-      selectedCategory === "Fashion" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "Fashion" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("Fashion")}
   >
     👕 Fashion
   </div>
 
   <div
-    className={`category ${
-      selectedCategory === "Books" ? "active-category" : ""
-    }`}
+    className={`category ${selectedCategory === "Books" ? "active-category" : ""}`}
     onClick={() => setSelectedCategory("Books")}
   >
     📚 Books
   </div>
+</div>
 
         <div className="products">
           {products
