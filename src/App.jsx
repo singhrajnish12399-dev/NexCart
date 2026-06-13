@@ -56,6 +56,7 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
+const [cartItems, setCartItems] = useState([]);
 
   return (
     <>
