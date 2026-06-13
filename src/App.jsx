@@ -30,6 +30,7 @@ function App() {
 const [cartCount, setCartCount] = useState(0);
 const [liked, setLiked] = useState(false);
 const [selectedProduct, setSelectedProduct] = useState(null);
+const [search, setSearch] = useState("");
   return (
     <>
       <header className="header">
