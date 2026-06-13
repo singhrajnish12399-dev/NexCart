@@ -64,12 +64,48 @@ const [selectedCategory, setSelectedCategory] = useState("All");
         </div>
 
         <div className="categories">
-          <div className="category">📱 Mobiles</div>
-          <div className="category">👕 Fashion</div>
-          <div className="category">💻 Electronics</div>
-          <div className="category">📚 Books</div>
-          <div className="category">🎮 Gaming</div>
-        </div>
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("All")}
+  >
+    🏪 All
+  </div>
+
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("Mobiles")}
+  >
+    📱 Mobiles
+  </div>
+
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("Electronics")}
+  >
+    💻 Electronics
+  </div>
+
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("Gaming")}
+  >
+    🎮 Gaming
+  </div>
+
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("Fashion")}
+  >
+    👕 Fashion
+  </div>
+
+  <div
+    className="category"
+    onClick={() => setSelectedCategory("Books")}
+  >
+    📚 Books
+  </div>
+</div>
 
         <div className="products">
   {products
