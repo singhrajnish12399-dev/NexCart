@@ -67,7 +67,11 @@ const [search, setSearch] = useState("");
         </div>
 
         <div className="products">
-          {products.map((product) => (
+  {products
+    .filter((product) =>
+      product.name.toLowerCase().includes(search.toLowerCase())
+    )
+    .map((product) => (
             <div className="product-card" key={product.id}>
 <div className="sale-badge">SALE</div>
               <img
