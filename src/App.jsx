@@ -213,6 +213,27 @@ const [showCart, setShowCart] = useState(false);
             </div>
           </div>
         )}
+{showCart && (
+  <div className="popup">
+    <div className="popup-content">
+      <h2>🛒 My Cart</h2>
+
+      {cartItems.length === 0 ? (
+        <p>Cart is Empty</p>
+      ) : (
+        cartItems.map((item, index) => (
+          <p key={index}>
+            {item.name} - {item.price}
+          </p>
+        ))
+      )}
+
+      <button onClick={() => setShowCart(false)}>
+        Close Cart
+      </button>
+    </div>
+  </div>
+)}
       </main>
 
       <nav className="bottom-nav">
