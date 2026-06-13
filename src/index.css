@@ -125,3 +125,10 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.wish-btn {
+  border: none;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
