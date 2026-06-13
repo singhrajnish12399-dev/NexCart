@@ -37,10 +37,12 @@ const [search, setSearch] = useState("");
         <div className="logo">NexCart</div>
 
         <input
-          type="text"
-          placeholder="Search products..."
-          className="search"
-        />
+  type="text"
+  placeholder="Search products..."
+  className="search"
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+/>
 
         <button className="cart-btn">
   🛒 {cartCount}
