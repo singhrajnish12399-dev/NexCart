@@ -109,10 +109,15 @@ const [selectedCategory, setSelectedCategory] = useState("All");
 
         <div className="products">
   {products
-    .filter((product) =>
-      product.name.toLowerCase().includes(search.toLowerCase())
-    )
-    .map((product) => (
+  .filter(
+    (product) =>
+      product.name
+        .toLowerCase()
+        .includes(search.toLowerCase()) &&
+      (selectedCategory === "All" ||
+        product.category === selectedCategory)
+  )
+  .map((product) => (
             <div className="product-card" key={product.id}>
 <div className="sale-badge">SALE</div>
               <img
