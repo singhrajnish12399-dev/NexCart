@@ -190,3 +190,14 @@ body {
   border-radius: 10px;
   font-weight: bold;
 }
+.active-category {
+  background: #ffcc00;
+  color: #000;
+  border: 2px solid #ff9800;
+  transform: scale(1.05);
+}
+
+.category {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
