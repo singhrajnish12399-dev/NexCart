@@ -137,16 +137,6 @@ function App() {
     📚 Books
   </div>
 
-  <div
-    className={`category ${
-      selectedCategory === "Home" ? "active-category" : ""
-    }`}
-    onClick={() => setSelectedCategory("Home")}
-  >
-    🏠 Home
-  </div>
-</div>
-
         <div className="products">
           {products
             .filter(
