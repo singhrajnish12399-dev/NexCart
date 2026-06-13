@@ -77,6 +77,12 @@ const [cartCount, setCartCount] = useState(0);
           ))}
         </div>
       </main>
+<nav className="bottom-nav">
+  <button>🏠 Home</button>
+  <button>📂 Categories</button>
+  <button>❤️ Wishlist</button>
+  <button>👤 Profile</button>
+</nav>
     </>
   );
 }
