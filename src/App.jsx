@@ -103,9 +103,17 @@ const [selectedProduct, setSelectedProduct] = useState(null);
 
       <p>{selectedProduct.price}</p>
 
-      <button onClick={() => setSelectedProduct(null)}>
-        Close
-      </button>
+<button
+  onClick={() => setCartCount(cartCount + 1)}
+>
+  Add to Cart
+</button>
+
+<br /><br />
+
+<button onClick={() => setSelectedProduct(null)}>
+  Close
+</button>
     </div>
   </div>
 )}
