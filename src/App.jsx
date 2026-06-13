@@ -67,7 +67,11 @@ const [selectedProduct, setSelectedProduct] = useState(null);
           {products.map((product) => (
             <div className="product-card" key={product.id}>
 <div className="sale-badge">SALE</div>
-              <img src={product.image} alt={product.name} />
+              <img
+  src={product.image}
+  alt={product.name}
+  onClick={() => setSelectedProduct(product)}
+/>
 
               <h3>{product.name}</h3>
 
