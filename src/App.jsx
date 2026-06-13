@@ -70,6 +70,7 @@ const [liked, setLiked] = useState(false);
               <h3>{product.name}</h3>
 
               <p>{product.price}</p>
+<p>⭐⭐⭐⭐⭐</p>
 
 <button
   className="wish-btn"
