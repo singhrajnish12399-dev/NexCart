@@ -115,8 +115,9 @@ const [selectedCategory, setSelectedCategory] = useState("All");
         .toLowerCase()
         .includes(search.toLowerCase()) &&
       (selectedCategory === "All" ||
-        product.category === selectedCategory)
-  )
+ product.category === selectedCategory ||
+ (selectedCategory === "Electronics" &&
+  ["Mobiles", "Gaming", "Electronics"].includes(product.category)))
   .map((product) => (
             <div className="product-card" key={product.id}>
 <div className="sale-badge">SALE</div>
