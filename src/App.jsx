@@ -71,7 +71,12 @@ const [liked, setLiked] = useState(false);
 
               <p>{product.price}</p>
 
-<button className="wish-btn">❤️</button>
+<button
+  className="wish-btn"
+  onClick={() => setLiked(!liked)}
+>
+  {liked ? "❤️" : "🤍"}
+</button>
 
 <button onClick={() => setCartCount(cartCount + 1)}>
   Add to Cart
