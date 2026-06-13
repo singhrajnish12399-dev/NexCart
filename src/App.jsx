@@ -28,6 +28,7 @@ const products = [
 
 function App() {
 const [cartCount, setCartCount] = useState(0);
+const [liked, setLiked] = useState(false);
   return (
     <>
       <header className="header">
