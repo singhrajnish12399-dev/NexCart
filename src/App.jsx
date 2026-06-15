@@ -254,6 +254,9 @@ const totalPrice = cartItems.reduce(
 ))
                 ))
               )}
+<hr />
+
+<h3>Total: ₹{totalPrice.toLocaleString()}</h3>
 
               <button onClick={() => setShowCart(false)}>
                 Close Cart
