@@ -211,3 +211,16 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+.cart-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
