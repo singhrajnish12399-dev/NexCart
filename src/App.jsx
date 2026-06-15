@@ -33,20 +33,22 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
   },
-{
-  id: 5,
-  name: "Men T-Shirt",
-  price: "₹799",
-  category: "Fashion",
-  image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
-},
-{
-  id: 6,
-  name: "Programming Book",
-  price: "₹499",
-  category: "Books",
-  image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500"
-}
+  {
+    id: 5,
+    name: "Men T-Shirt",
+    price: "₹799",
+    category: "Fashion",
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500",
+  },
+  {
+    id: 6,
+    name: "Programming Book",
+    price: "₹499",
+    category: "Books",
+    image:
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500",
+  },
 ];
 
 function App() {
@@ -55,8 +57,8 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-const [cartItems, setCartItems] = useState([]);
-const [showCart, setShowCart] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  const [showCart, setShowCart] = useState(false);
 
   return (
     <>
@@ -72,11 +74,11 @@ const [showCart, setShowCart] = useState(false);
         />
 
         <button
-  className="cart-btn"
-  onClick={() => setShowCart(true)}
->
-  🛒 {cartCount}
-</button>
+          className="cart-btn"
+          onClick={() => setShowCart(true)}
+        >
+          🛒 {cartCount}
+        </button>
       </header>
 
       <main className="home">
@@ -89,48 +91,60 @@ const [showCart, setShowCart] = useState(false);
         </div>
 
         <div className="categories">
-  <div
-    className={`category ${selectedCategory === "All" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("All")}
-  >
-    🏪 All
-  </div>
+          <div
+            className={`category ${
+              selectedCategory === "All" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("All")}
+          >
+            🏪 All
+          </div>
 
-  <div
-    className={`category ${selectedCategory === "Mobiles" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("Mobiles")}
-  >
-    📱 Mobiles
-  </div>
+          <div
+            className={`category ${
+              selectedCategory === "Mobiles" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("Mobiles")}
+          >
+            📱 Mobiles
+          </div>
 
-  <div
-    className={`category ${selectedCategory === "Electronics" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("Electronics")}
-  >
-    💻 Electronics
-  </div>
+          <div
+            className={`category ${
+              selectedCategory === "Electronics" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("Electronics")}
+          >
+            💻 Electronics
+          </div>
 
-  <div
-    className={`category ${selectedCategory === "Gaming" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("Gaming")}
-  >
-    🎮 Gaming
-  </div>
+          <div
+            className={`category ${
+              selectedCategory === "Gaming" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("Gaming")}
+          >
+            🎮 Gaming
+          </div>
 
-  <div
-    className={`category ${selectedCategory === "Fashion" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("Fashion")}
-  >
-    👕 Fashion
-  </div>
+          <div
+            className={`category ${
+              selectedCategory === "Fashion" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("Fashion")}
+          >
+            👕 Fashion
+          </div>
 
-  <div
-    className={`category ${selectedCategory === "Books" ? "active-category" : ""}`}
-    onClick={() => setSelectedCategory("Books")}
-  >
-    📚 Books
-  </div>
-</div>
+          <div
+            className={`category ${
+              selectedCategory === "Books" ? "active-category" : ""
+            }`}
+            onClick={() => setSelectedCategory("Books")}
+          >
+            📚 Books
+          </div>
+        </div>
 
         <div className="products">
           {products
@@ -159,9 +173,7 @@ const [showCart, setShowCart] = useState(false);
                 />
 
                 <h3>{product.name}</h3>
-
                 <p>{product.price}</p>
-
                 <p>⭐⭐⭐⭐⭐</p>
 
                 <button
@@ -172,13 +184,13 @@ const [showCart, setShowCart] = useState(false);
                 </button>
 
                 <button
-  onClick={() => {
-    setCartCount(cartCount + 1);
-    setCartItems([...cartItems, selectedProduct]);
-  }}
->
-  Add to Cart
-</button>
+                  onClick={() => {
+                    setCartCount(cartCount + 1);
+                    setCartItems([...cartItems, product]);
+                  }}
+                >
+                  Add to Cart
+                </button>
               </div>
             ))}
         </div>
@@ -192,17 +204,16 @@ const [showCart, setShowCart] = useState(false);
               />
 
               <h2>{selectedProduct.name}</h2>
-
               <p>{selectedProduct.price}</p>
 
               <button
-  onClick={() => {
-    setCartCount(cartCount + 1);
-    setCartItems([...cartItems, product]);
-  }}
->
-  Add to Cart
-</button>
+                onClick={() => {
+                  setCartCount(cartCount + 1);
+                  setCartItems([...cartItems, selectedProduct]);
+                }}
+              >
+                Add to Cart
+              </button>
 
               <br />
               <br />
@@ -215,27 +226,28 @@ const [showCart, setShowCart] = useState(false);
             </div>
           </div>
         )}
-{showCart && (
-  <div className="popup">
-    <div className="popup-content">
-      <h2>🛒 My Cart</h2>
 
-      {cartItems.length === 0 ? (
-        <p>Cart is Empty</p>
-      ) : (
-        cartItems.map((item, index) => (
-          <p key={index}>
-            {item.name} - {item.price}
-          </p>
-        ))
-      )}
+        {showCart && (
+          <div className="popup">
+            <div className="popup-content">
+              <h2>🛒 My Cart</h2>
 
-      <button onClick={() => setShowCart(false)}>
-        Close Cart
-      </button>
-    </div>
-  </div>
-)}
+              {cartItems.length === 0 ? (
+                <p>Cart is Empty</p>
+              ) : (
+                cartItems.map((item, index) => (
+                  <p key={index}>
+                    {item.name} - {item.price}
+                  </p>
+                ))
+              )}
+
+              <button onClick={() => setShowCart(false)}>
+                Close Cart
+              </button>
+            </div>
+          </div>
+        )}
       </main>
 
       <nav className="bottom-nav">
