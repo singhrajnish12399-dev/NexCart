@@ -259,3 +259,9 @@ body {
   padding-top: 10px;
   border-top: 1px solid #ddd;
 }
+.active-nav {
+  background: #ffcc00 !important;
+  color: black;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
