@@ -261,10 +261,9 @@ body {
 }
 .active-nav {
   background: #ffcc00 !important;
-  color: black;
-  border-radius: 10px;
+  color: black !important;
+  border: 2px solid #ff9800 !important;
+  border-radius: 12px;
   padding: 8px 12px;
-
-  border: 2px solid #ff9800;
-  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.5);
 }
