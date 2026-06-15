@@ -236,9 +236,17 @@ function App() {
                 <p>Cart is Empty</p>
               ) : (
                 cartItems.map((item, index) => (
-                  <p key={index}>
-                    {item.name} - {item.price}
-                  </p>
+                  cartItems.map((item, index) => (
+  <div key={index} className="cart-item">
+    <img
+      src={item.image}
+      alt={item.name}
+      width="80"
+    />
+    <p>{item.name}</p>
+    <p>{item.price}</p>
+  </div>
+))
                 ))
               )}
 
