@@ -33,7 +33,6 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500",
   },
-,
 {
   id: 5,
   name: "Men T-Shirt",
