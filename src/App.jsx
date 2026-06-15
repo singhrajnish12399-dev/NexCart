@@ -291,30 +291,44 @@ const totalPrice = cartItems.reduce(
       </main>
 
       <nav className="bottom-nav">
-        <button
-  className={activeTab === "home" ? "active-nav" : ""}
-  onClick={() => setActiveTab("home")}
->
-  🏠 Home
-</button>
-        <button
-  className={activeTab === "categories" ? "active-nav" : ""}
-  onClick={() => setActiveTab("categories")}
->
-  📂 Categories
-</button>
-        <button
-  className={activeTab === "wishlist" ? "active-nav" : ""}
-  onClick={() => setActiveTab("wishlist")}
->
-  ❤️ Wishlist
-</button>
-        <button
-  className={activeTab === "profile" ? "active-nav" : ""}
-  onClick={() => setActiveTab("profile")}
->
-  👤 Profile
-</button>
+  <button
+    className={activeTab === "home" ? "active-nav" : ""}
+    onClick={() => setActiveTab("home")}
+  >
+    🏠 Home
+  </button>
+
+  <button
+    className={activeTab === "categories" ? "active-nav" : ""}
+    onClick={() => setActiveTab("categories")}
+  >
+    📂 Categories
+  </button>
+
+  <button
+    className={activeTab === "cart" ? "active-nav" : ""}
+    onClick={() => {
+      setActiveTab("cart");
+      setShowCart(true);
+    }}
+  >
+    🛒 Cart
+  </button>
+
+  <button
+    className={activeTab === "wishlist" ? "active-nav" : ""}
+    onClick={() => setActiveTab("wishlist")}
+  >
+    ❤️ Wishlist
+  </button>
+
+  <button
+    className={activeTab === "profile" ? "active-nav" : ""}
+    onClick={() => setActiveTab("profile")}
+  >
+    👤 Profile
+  </button>
+</nav>
       </nav>
     </>
   );
