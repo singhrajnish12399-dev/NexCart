@@ -303,8 +303,18 @@ const totalPrice = cartItems.reduce(
 >
   📂 Categories
 </button>
-        <button>❤️ Wishlist</button>
-        <button>👤 Profile</button>
+        <button
+  className={activeTab === "wishlist" ? "active-nav" : ""}
+  onClick={() => setActiveTab("wishlist")}
+>
+  ❤️ Wishlist
+</button>
+        <button
+  className={activeTab === "profile" ? "active-nav" : ""}
+  onClick={() => setActiveTab("profile")}
+>
+  👤 Profile
+</button>
       </nav>
     </>
   );
