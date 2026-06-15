@@ -270,9 +270,6 @@ const totalPrice = cartItems.reduce(
 <div className="cart-footer">
   <h3>Total: ₹{totalPrice.toLocaleString()}</h3>
 
-  <div className="cart-footer">
-  <h3>Total: ₹{totalPrice.toLocaleString()}</h3>
-
   <button
     onClick={() => {
       alert("🎉 Order Placed Successfully!");
