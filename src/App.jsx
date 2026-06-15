@@ -242,14 +242,28 @@ const totalPrice = cartItems.reduce(
               ) : (
                 cartItems.map((item, index) => (
   <div key={index} className="cart-item">
-    <img
-      src={item.image}
-      alt={item.name}
-      width="80"
-    />
-    <p>{item.name}</p>
-    <p>{item.price}</p>
-  </div>
+  <img
+    src={item.image}
+    alt={item.name}
+    width="80"
+  />
+
+  <p>{item.name}</p>
+  <p>{item.price}</p>
+
+  <button
+    onClick={() => {
+      const updatedCart = cartItems.filter(
+        (_, i) => i !== index
+      );
+
+      setCartItems(updatedCart);
+      setCartCount(updatedCart.length);
+    }}
+  >
+    ❌ Remove
+  </button>
+</div>
 ))
               )}
 <hr />
