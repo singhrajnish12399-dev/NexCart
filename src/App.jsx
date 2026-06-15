@@ -329,7 +329,6 @@ const totalPrice = cartItems.reduce(
     👤 Profile
   </button>
 </nav>
-      </nav>
     </>
   );
 }
