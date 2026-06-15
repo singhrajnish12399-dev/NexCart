@@ -286,17 +286,7 @@ const totalPrice = cartItems.reduce(
   </button>
 </div>
 
-    setCartItems([]);
-    setCartCount(0);
-    setShowCart(false);
-  }}
->
-  Checkout
-</button>
-    Close Cart
-  </button>
-</div>
-            </div>
+     </div>
           </div>
         )}
       </main>
