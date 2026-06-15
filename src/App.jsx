@@ -241,7 +241,6 @@ const totalPrice = cartItems.reduce(
                 <p>Cart is Empty</p>
               ) : (
                 cartItems.map((item, index) => (
-                  cartItems.map((item, index) => (
   <div key={index} className="cart-item">
     <img
       src={item.image}
@@ -252,7 +251,6 @@ const totalPrice = cartItems.reduce(
     <p>{item.price}</p>
   </div>
 ))
-                ))
               )}
 <hr />
 
