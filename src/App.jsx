@@ -266,13 +266,13 @@ const totalPrice = cartItems.reduce(
 </div>
 ))
               )}
-<hr />
+<div className="cart-footer">
+  <h3>Total: ₹{totalPrice.toLocaleString()}</h3>
 
-<h3>Total: ₹{totalPrice.toLocaleString()}</h3>
-
-              <button onClick={() => setShowCart(false)}>
-                Close Cart
-              </button>
+  <button onClick={() => setShowCart(false)}>
+    Close Cart
+  </button>
+</div>
             </div>
           </div>
         )}
