@@ -174,7 +174,7 @@ const [showCart, setShowCart] = useState(false);
                 <button
   onClick={() => {
     setCartCount(cartCount + 1);
-    setCartItems([...cartItems, product]);
+    setCartItems([...cartItems, selectedProduct]);
   }}
 >
   Add to Cart
