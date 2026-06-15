@@ -270,6 +270,17 @@ const totalPrice = cartItems.reduce(
   <h3>Total: ₹{totalPrice.toLocaleString()}</h3>
 
   <button onClick={() => setShowCart(false)}>
+<button
+  onClick={() => {
+    alert("🎉 Order Placed Successfully!");
+
+    setCartItems([]);
+    setCartCount(0);
+    setShowCart(false);
+  }}
+>
+  Checkout
+</button>
     Close Cart
   </button>
 </div>
