@@ -59,6 +59,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
+const [activeTab, setActiveTab] = useState("home");
 const totalPrice = cartItems.reduce(
   (total, item) =>
     total + Number(item.price.replace(/[₹,]/g, "")),
