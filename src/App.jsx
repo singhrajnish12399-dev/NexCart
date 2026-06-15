@@ -297,7 +297,12 @@ const totalPrice = cartItems.reduce(
 >
   🏠 Home
 </button>
-        <button>📂 Categories</button>
+        <button
+  className={activeTab === "categories" ? "active-nav" : ""}
+  onClick={() => setActiveTab("categories")}
+>
+  📂 Categories
+</button>
         <button>❤️ Wishlist</button>
         <button>👤 Profile</button>
       </nav>
